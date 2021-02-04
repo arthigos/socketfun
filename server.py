@@ -1,5 +1,10 @@
 import socket
 
+def send_text(sending_socket, text):
+    text = text + "\n"  # test with append EOT (\4)
+    data = text.encode()
+    sending_socket.send(data)
+
 # Create a socket
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
@@ -12,17 +17,15 @@ server_socket.listen()
 print("Server is listening at port 8081")
 
 # Accept connection
-connection_socket, address = server_socket.accept()
+connection_socket, client_address = server_socket.accept()
 
 print("Connected with ", client_address)
 
 # Send something to the client
 
-message = "Hey there, thank you for connecting with me"
+message = "Hey there, server here. Thank you for connecting with me"
 
-data = message.encode()
-
-connection_socket.send(data)
+send_text(connection_socket, message)
 
 # Hearing back from the client
 client_message = connection_socket.recv(1024)
