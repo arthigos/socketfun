@@ -9,3 +9,10 @@ Checklist
 [] Step by step
 [] Add UDP variant
 [] Package drop simulation
+
+#### Testing
+Open a terminal window and cd into the repo then run:
+`python3 server.py`
+
+On another terminal window, run:
+`python3 client.py`
