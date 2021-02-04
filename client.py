@@ -26,11 +26,12 @@ print("Client has connected to the server")
 
 # Getting data from server using the client socket
 
-data = client_socket.recv(1024)
+#data = client_socket.recv(1024)
 
-message = data.decode()
+#message = data.decode()
 
 #for message in get_text(client_socket):
+message = next(get_text(client_socket))
 print(message)
 
 # Sending data to the server
