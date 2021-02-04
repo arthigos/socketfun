@@ -16,6 +16,14 @@ message = data.decode()
 
 print(message)
 
+# Sending data to the server
+
+client_data = "Hi there, client over here. Thank you for letting me connect =]"
+
+client_data = client_data.encode()
+
+client_socket.send(client_data)
+
 # Time for some closure
 
 client_socket.close()
