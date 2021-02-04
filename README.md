@@ -4,11 +4,13 @@ The source code can be found on the Networking with Python: Socket Programming f
 
 [x] Client source code
 [x] Server source code
-[] Step by step
+[x] Step by step
 [] Add UDP variant
 [] Package drop simulation
-[] Chat application
-
+[x] Chat application
+[] Improve chat application (xD)
+[] Threadify
+[] Add exit message for graceful shutdown
 #### Testing
 
 1. Open a terminal window and cd into the repo then run:
@@ -18,3 +20,16 @@ The source code can be found on the Networking with Python: Socket Programming f
 `python3 client.py`
 
 3. Be amazed of how little this code does
+
+#### Chatting up
+
+1. Open a terminal window and cd into the repo then run:
+`python3 chat.py
+ server`
+
+2. Open another terminal window, cd into the repo if necessary then run:
+`python3 chat.py
+ client`
+
+3. Enjoy
+
