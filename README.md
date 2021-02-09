@@ -19,7 +19,7 @@ The source code can be found on the Networking with Python: Socket Programming f
 2. With the server running, open another terminal window and run:
 `python3 client.py`
 
-3. Be amazed of how little this code does
+3. Be amazed by how little this code does
 
 #### Chatting up
 
